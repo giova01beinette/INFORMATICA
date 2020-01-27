@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../001_GETStarted/bootstrap/css/bootstrap.min.css">
+    <title>Inserimento dati tabella</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="addTable.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <br><br>
+
+
+        <form role="form" class="form-inline">
+            <div class="form-group">
+                <label for="surname" class="col-md-2">Surname</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="surname" placeholder="Enter surname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-md-2">Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+            </div>
+            <input type="button" class="btn btn-default" id="submit" value="Aggiungi" style="background-color: rgba(165, 161, 161, 0.836);">
+        </form>
+    </div>
+    <br><br>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Cognome</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    </div>
+</body>
+
+</html>
